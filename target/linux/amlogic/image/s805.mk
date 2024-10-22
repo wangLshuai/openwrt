@@ -24,6 +24,6 @@ define Device/onecloud
 	kmod-brcmfmac brcmfmac-firmware-4339-sdio cypress-nvram-4339-sdio
   FILESYSTEMS := ext4
   IMAGES := combined.bin
-  IMAGE/combined.bin := append-rootfs | pad-extra 128k | onecloud-usb-uboot
+  IMAGE/combined.bin := onecloud-usb-uboot
 endef
 TARGET_DEVICES += onecloud
