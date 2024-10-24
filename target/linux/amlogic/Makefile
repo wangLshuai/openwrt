@@ -16,6 +16,13 @@ include $(INCLUDE_DIR)/target.mk
 
 KERNELNAME:=zImage dtbs
 
-DEFAULT_PACKAGES += uboot-envtools mkf2fs e2fsprogs blkid
+DEFAULT_PACKAGES += -dropbear -dnsmasq -ppp
+DEFAULT_PACKAGES += uboot-envtools mkf2fs e2fsprogs blkid lsblk bash vim-full xxd dnsmasq-full\
+	coreutils coreutils-base64 coreutils-nohup procps-ng-ps less htop sysstat tmux docker dockerd parted resize2fs losetup unzip ruby-yaml ruby\
+	curl dns2socks dns2tcp ip-full libuci-lua luci-compat microsocks resolveip tcping ipt2socks libcap libcap-bin \
+	openssh-sftp-server openssh-sftp-client openssh-server \
+	uhttpd luci-base luci-theme-argon luci-i18n-base-zh-cn luci-mod-network luci-mod-system \
+	luci-mod-dashboard luci-mod-admin-full luci-app-ttyd luci-i18n-ttyd-zh-cn\
+	luci-app-openclash luci-app-homeproxy luci-i18n-openclash luci-app-firewall luci-i18n-firewall luci-i18n-homeproxy-zh-cn luci-compat
 
 $(eval $(call BuildTarget))
