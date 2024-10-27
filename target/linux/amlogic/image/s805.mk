@@ -18,10 +18,8 @@ define Device/onecloud
   DEVICE_DTS := meson8b-onecloud
   DEVICE_DTS_DIR := ../dts/
   KERNEL_LOADADDR := 0x00208000
-  DEVICE_PACKAGES := kmod-sound-core \
-	kmod-can kmod-can-flexcan kmod-can-raw kmod-leds-gpio \
-	kmod-input-touchscreen-edt-ft5x06 kmod-usb-hid kmod-btsdio \
-	kmod-brcmfmac brcmfmac-firmware-4339-sdio cypress-nvram-4339-sdio
+  DEVICE_PACKAGES := kmod-sound-core kmod-vfat-fs\
+	kmod-leds-gpio kmod-usb-hid kmod-fs-vfat
   FILESYSTEMS := ext4
   IMAGES := combined.bin
   IMAGE/combined.bin := onecloud-usb-uboot
