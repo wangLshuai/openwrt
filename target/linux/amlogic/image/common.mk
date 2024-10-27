@@ -18,6 +18,8 @@ define Build/onecloud-combined-image
 		-n '$(DEVICE_ID) OpenWrt bootscript' \
 		-d s805_autoscript.cmd \
 		$@.boot/s805_autoscript
+	cp $@.boot/s805_autoscript $@.boot/boot.scr
+	cp s805_autoscript.cmd $@.boot/
 	mkfs.fat -C $@.boot.fat $(FAT32_BLOCKS)
 	mcopy -i $@.boot.fat $@.boot/* :: 
 	./gen_aml_emmc_img.sh $@ $@.boot.fat $(IMAGE_ROOTFS) \
