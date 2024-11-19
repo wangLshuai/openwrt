@@ -1,5 +1,7 @@
 为玩客云OneCloud适配openwrt,使用了immotalwrt的feed包
 
+![CI Status](https://github.com/wangLshuai/openwrt/actions/workflows/build.yml/badge.svg)
+
 未修改任何upstream的内容,保持干净。
 
 ## build
