@@ -10,7 +10,7 @@ BOARDNAME:=amlogic
 FEATURES:=audio ext4 display fpu gpio pcie rtc usb usbgadget squashfs targz nand ubifs boot-part rootfs-part
 SUBTARGETS:=s805
 
-KERNEL_PATCHVER:=5.15
+KERNEL_PATCHVER:=6.6
 
 include $(INCLUDE_DIR)/target.mk
 
