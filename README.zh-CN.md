@@ -14,7 +14,7 @@ cd openwrt
 ```
 下载feeds的所有的包，保存在feeds目录下，每个package是一个Makefile,包含了真正的软件的链接和构建方式。
 ```shell
-./script/feeds update -a
+./scripts/feeds update -a
 ```
 把所有的feed package都建立一个在package目录下的软连接
 ```shell
